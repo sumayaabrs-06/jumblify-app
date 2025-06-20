@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upcycling Function - Inspiration</title>
+    <link rel="stylesheet" href="upcycling.css">
+        <link rel="stylesheet" href="https://use.typekit.net/pxm0uug.css">
+</head>
+<body>
+    <div class="phone-container">
+        <div class="status-bar">
+            <div class="status-left">13:45</div>
+            <div class="status-right">
+                <div class="signal-bars"></div>
+                <div class="wifi-icon"></div>
+                <div class="battery-icon"></div>
+            </div>
+        </div>
+
+        <div class="header">
+            <button class="back-arrow">
+                <a href="/home-page/index.html">
+                <img src="/images-and-icons/back-arrow-dark.png"width="20" height="20" alt="Back">
+                </a>
+            </button>
+            <div></div>
+            <div></div>
+        </div>
+
+        <div class="three-progress-container">
+            <div class="three-progress-text">3/4</div>
+            <div class="three-progress-bar">
+                <div class="three-progress-fill"></div>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="header-section">
+                <h1 class="title">Inspiration time!</h1>
+                <p class="subtitle">Input some imagery of what you want your up-cycled item to look like! along with notes and details for specific wants and needs</p>
+            </div>
+
+            <div class="inspiration-section">
+                <div class="inspiration-box">
+                    <div class="inspiration-header">
+                        <div>
+                            <div class="inspiration-title">Inspiration Images</div>
+                            <div class="inspiration-subtitle">You can add a max of 5 images and a max file size of 10KG</div>
+                        </div>
+                        <div class="image-placeholder-icon">
+                            <img src="/images-and-icons/image-icon.png" alt="image">
+                        </div>
+                    </div>
+
+                    <div class="image-upload-container">
+                        <div class="image-upload-slot" data-slot="1">
+                            <span class="plus-icon">+</span>
+                            <input type="file" accept="image/*" id="image-1">
+                        </div>
+                        <div class="image-upload-slot" data-slot="2">
+                            <span class="plus-icon">+</span>
+                            <input type="file" accept="image/*" id="image-2">
+                        </div>
+                        <div class="image-upload-slot" data-slot="3">
+                            <span class="plus-icon">+</span>
+                            <input type="file" accept="image/*" id="image-3">
+                        </div>
+                        <div class="image-upload-slot" data-slot="4">
+                            <span class="plus-icon">+</span>
+                            <input type="file" accept="image/*" id="image-4">
+                        </div>
+                        <div class="image-upload-slot" data-slot="5">
+                            <span class="plus-icon">+</span>
+                            <input type="file" accept="image/*" id="image-5">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="notes-container">
+                    <textarea 
+                        class="notes-textarea" 
+                        placeholder="Add any details and notes here..."
+                        id="notes-textarea"
+                    ></textarea>
+                    <div class="notes-hint">the more specific the better!</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="navigation">
+            <a href="/upcycling-function/2-box-size.html">
+            <button class="nav-button back-button" id="back-btn">Back</button>
+            </a>
+            <a href="/upcycling-function/4-receipt.html">
+            <button class="nav-button next-button" id="next-btn">Next</button>
+            </a>
+        </div>
+    </div>
+
+    <script src="upcycling.js"></script>
+</body>
+</html>

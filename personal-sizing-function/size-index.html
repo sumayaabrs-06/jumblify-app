@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jumblify - Personal Measurements</title>
+    <link rel="stylesheet" href="size.css">
+</head>
+<body>
+    <div class="phone-container">
+        <div class="status-bar">
+            <div class="status-left">13:45</div>
+            <div class="status-right">
+                <div class="signal-bars"></div>
+                <div class="wifi-icon"></div>
+                <div class="battery-icon"></div>
+            </div>
+        </div>
+
+        <div class="header">
+            <button class="back-arrow">
+                <a href="/settings-page/settings.html">
+                <img src="/images-and-icons/back-arrow-dark.png" alt="Back">
+                </a>
+            </button>
+            <div class="page-title">Measurements</div>
+        </div>
+
+        <div class="main-content">
+            <form class="measurement-form" id="measurementForm">
+                <div class="form-group">
+                    <label for="height">Height (cm)</label>
+                    <input type="number" id="height" name="height" step="0.1" placeholder="Enter height in cm">
+                </div>
+
+                <div class="form-group">
+                    <label for="alphaSizing">Alpha Sizing</label>
+                    <select id="alphaSizing" name="alpha_sizing" required>
+                        <option value="">Select Size</option>
+                        <option value="XS">XS</option>
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                        <option value="XL">XL</option>
+                        <option value="XXL">XXL</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="bodyPart">Body Part</label>
+                    <select id="bodyPart" name="body_part" required>
+                        <option value="">Select Body Part</option>
+                        <option value="Chest">Chest</option>
+                        <option value="Waist">Waist</option>
+                        <option value="Hips">Hips</option>
+                        <option value="Arms">Arms</option>
+                        <option value="Thighs">Thighs</option>
+                        <option value="Shoulders">Shoulders</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="inchCm">Measurement (cm)</label>
+                    <input type="text" id="inchCm" name="inch_cm" placeholder="e.g., 220cm" required>
+                </div>
+
+                <button type="submit" class="submit-btn">Save Measurement</button>
+            </form>
+
+            <div class="measurements-list" id="measurementsList">
+                <div class="empty-state">
+                    <h3>No measurements yet</h3>
+                    <p>Add your first measurement above!</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="bottom-nav">
+            <div class="nav-icon nav-home">
+                <img src="/images-and-icons/home.png" alt="Home">
+            </div>
+            <div class="nav-icon nav-box">
+                <a href="/upcycling-function/1-pricing.html">
+                <img src="/images-and-icons/up-cycle-function.png" alt="Box">
+                </a>
+            </div>
+            <div class="nav-icon nav-grid">
+                <img src="/images-and-icons/qr-scan-steps.png" alt="Grid">
+            </div>
+        </div>
+
+    <script type="module" src="size.js"></script>
+</body>
+</html>

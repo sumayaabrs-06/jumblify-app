@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upcycling Function - Pricing</title>
+    <link rel="stylesheet" href="upcycling.css">
+    <link rel="stylesheet" href="https://use.typekit.net/pxm0uug.css">
+</head>
+<body>
+    <div class="phone-container">
+        <div class="status-bar">
+            <div class="status-left">13:45</div>
+            <div class="status-right">
+                <div class="signal-bars"></div>
+                <div class="wifi-icon"></div>
+                <div class="battery-icon"></div>
+            </div>
+        </div>
+
+        <div class="header">
+            <button class="back-arrow">
+                <a href="/home-page/index.html">
+                <img src="/images-and-icons/back-arrow-dark.png" alt="Back">
+                </a>
+            </button>
+            <div></div>
+            <div></div>
+        </div>
+
+        <div class="one-progress-container">
+            <div class="one-progress-text">1/4</div>
+            <div class="one-progress-bar">
+                <div class="one-progress-fill"></div>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="header-section">
+                <h1 class="title">Pricing</h1>
+                <p class="subtitle">How much are you able to pay to up-cycle your item and we can work with that</p>
+            </div>
+
+            <div class="form-section-container">
+                <div class="form-section">
+                    <label class="form-label">Any additional add-ons you might want?</label>
+                    <input type="text" class="text-input" id="addons-input" placeholder="type here....">
+                    <div class="price-factor-note">
+                        <span class="warning-icon">⚠️</span>
+                        <span>This plays a factor into the price</span>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <label class="form-label">Will you be need additional material added?</label>
+                    <input type="text" class="text-input" id="materials-input" placeholder="type here....">
+                    <div class="price-factor-note">
+                        <span class="warning-icon">⚠️</span>
+                        <span>This plays a factor into the price</span>
+                    </div>
+                </div>
+
+                <div class="separator"></div>
+
+                <div class="amount-section">
+                    <div class="amount-label">What is the maximum amount you will pay?</div>
+                    <div class="amount-sublabel">Amount</div>
+                    
+                    <div class="slider-container">
+                        <div class="amount-display" id="amount-display">$29</div>
+                        <div class="slider-wrapper">
+                            <input type="range" class="price-slider" id="price-slider" 
+                                   min="10" max="200" value="29" step="1">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="navigation">
+            <button class="nav-button back-button" id="back-btn">Back</button>
+            <a href="/upcycling-function/2-box-size.html">
+            <button class="nav-button next-button" id="next-btn">Next</button>
+            </a>
+
+        </div>
+    </div>
+
+    <script src="upcycling.js"></script>
+</body>
+</html>

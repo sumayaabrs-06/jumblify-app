@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Upcycling Function - Receipt</title>
+  <link rel="stylesheet" href="/upcycling-function/upcycling.css"/>
+  <link rel="stylesheet" href="https://use.typekit.net/pxm0uug.css">
+
+</head>
+<body>
+  <div class="phone-container">
+    <div class="status-bar">
+      <div class="status-left">13:45</div>
+      <div class="status-right">
+        <div class="signal-bars"></div>
+        <div class="wifi-icon"></div>
+        <div class="battery-icon"></div>
+      </div>
+    </div>
+
+    <div class="header">
+         <button class="back-arrow">
+            <a href="/home-page/index.html">
+            <img src="/images-and-icons/back-arrow-dark.png" alt="Back">
+            </a>
+      <div></div>
+      <div></div>
+    </div>
+
+    <div class="four-progress-container">
+      <div class="four-progress-text">4/4</div>
+      <div class="four-progress-bar">
+        <div class="four-progress-fill"></div>
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="header-section">
+        <h1 class="title">Receipt</h1>
+        <p class="subtitle">Final step! confirm your location and payment details</p>
+      </div>
+
+      <div class="dashed-separator"></div>
+
+      <div class="form-section-container">
+        <div class="form-section">
+          <label class="form-label">Form of notification</label>
+          <input type="email" class="text-input" id="email-input" value="user1295@gmail.com">
+          <div class="phone-input-container">
+            <select class="country-select" id="country-select">
+              <option value="NZ">NZ</option>
+              <option value="AU">AU</option>
+              <option value="US">US</option>
+              <option value="UK">UK</option>
+            </select>
+            <input type="tel" class="text-input phone-input" id="phone-input" value="0272709876">
+          </div>
+        </div>
+
+        <div class="form-section">
+          <label class="form-label">Confirm - Card Number</label>
+          <div class="card-input-container">
+            <input type="text" class="text-input card-number-input" id="card-number" value="5342 0483 4823 2480">
+            <input type="text" class="text-input card-date-input" id="card-date" placeholder="MM/YY">
+            <input type="text" class="text-input card-cvc-input" id="card-cvc" placeholder="CVC">
+          </div>
+        </div>
+
+        <div class="form-section">
+          <label class="form-label">Confirm - Billing Address</label>
+          <div class="address-container">
+            <input type="text" class="text-input address-input" id="address" value="1034 Homes, Kingsland">
+            <div class="flag-placeholder">
+                <img src="/images-and-icons/nz-flag.png" alt="nz flag">
+            </div>
+          </div>
+          <div class="address-row2">
+            <input type="text" class="text-input country-input" id="country" value="New Zealand">
+            <input type="text" class="text-input postcode-input" id="postcode" value="90171340">
+          </div>
+        </div>
+
+        <div class="total-section">
+          <div class="total-label">Total</div>
+          <div class="total-amount">$ 23.00</div>
+        </div>
+
+        <div class="confirmation-section">
+          <div class="checkbox-container" id="checkbox-container">
+            <div class="custom-checkbox" id="custom-checkbox">
+              <span class="checkmark">✓</span>
+            </div>
+          </div>
+          <div class="confirmation-text">I confirm and agree to all details and costs stated</div>
+        </div>
+
+        <button class="pay-button" id="pay-button">Pay Now</button>
+      </div>
+    </div>
+  </div>
+  <script src="/upcycling-function/upcycling.js"></script>
+</body>
+</html>

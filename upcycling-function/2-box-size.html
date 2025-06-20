@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upcycling Function - Picking Box Size</title>
+    <link rel="stylesheet" href="upcycling.css">
+    <link rel="stylesheet" href="https://use.typekit.net/pxm0uug.css">
+</head>
+<body>
+    <div class="phone-container">
+        <div class="status-bar">
+            <div class="status-left">13:45</div>
+            <div class="status-right">
+                <div class="signal-bars"></div>
+                <div class="wifi-icon"></div>
+                <div class="battery-icon"></div>
+            </div>
+        </div>
+
+        <div class="header">
+            <button class="back-arrow">
+                <a href="/home-page/index.html">
+                <img src="/images-and-icons/back-arrow-dark.png" alt="Back">
+                </a>
+            </button>
+            <div></div>
+            <div></div>
+        </div>
+
+        <div class="two-progress-container">
+            <div class="two-progress-text">2/4</div>
+            <div class="two-progress-bar">
+                <div class="two-progress-fill"></div>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="header-section">
+                <h1 class="title">How many items?</h1>
+                <p class="subtitle">Depending on the amount of clothing items you want to upcycle, pick your corresponding box size</p>
+            </div>
+
+            <div class="box-selection">
+                <button class="box-option" data-size="small" id="small-box">
+                    <img src="/images-and-icons/box-s-off.png" alt="Small Box" id="small-img">
+                </button>
+
+                <button class="box-option" data-size="medium" id="medium-box">
+                    <img src="/images-and-icons/box-m-off.png" alt="Medium Box" id="medium-img">
+                </button>
+
+                <button class="box-option" data-size="large" id="large-box">
+                    <img src="/images-and-icons/box-l-off.png" alt="Large Box" id="large-img">
+                </button>
+            </div>
+        </div>
+
+        <div class="navigation">
+            <a href="/upcycling-function/1-pricing.html">
+            <button class="nav-button back-button" id="back-btn">Back</button>
+            </a>
+            <a href="/upcycling-function/3-inspiration.html">
+            <button class="nav-button next-button" id="next-btn">Next</button>
+            </a>
+        </div>
+    </div>
+
+    <script src="upcycling.js"></script>
+</body>
+</html>
